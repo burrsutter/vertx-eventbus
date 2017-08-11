@@ -104,6 +104,30 @@
           <redeploy>true</redeploy>
         </configuration>
       </plugin>
+    
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>fabric8-maven-plugin</artifactId>
+        <version>3.5.22</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>resource</goal>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+      
+        <configuration>
+          <resources>
+            <labels>
+              <all>
+                <space>tatooine</space>
+              </all>
+            </labels>
+          </resources>
+        </configuration>
+      </plugin>
     </plugins>
 
     <pluginManagement>
